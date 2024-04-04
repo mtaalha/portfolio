@@ -36,7 +36,7 @@ header{
 .container{
     max-width: 1152px;
     margin: 0px auto;
-    padding: 0.7rem 15px;
+    padding: 0.7rem 12px;
 }
 
 
@@ -137,7 +137,7 @@ section.about h3{
 }
 section.about p{
     font-family: "Lato", sans-serif;
-    color: var(--ternary);
+    color: var(--dark);
     line-height: 1.9;
     margin-bottom: 2rem;
     font-weight: 300;
@@ -148,7 +148,7 @@ section.about p::selection{
     background: var(--primary);
 }
 section.about p:hover{
-    color: var(--dark);
+    color: var(--secondary);
 }
 section.about .p-first-child{
     margin-bottom: 1.3rem;
@@ -625,14 +625,37 @@ header.site-main-wrapper{
     .hero{
         flex-direction: column;
         margin-top: 2rem;
+        position: relative;
     }
     header{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 94%, 0 100%);
+        padding-bottom: 12rem;
     }
     .hero .hero-right{
-        margin-top: 0.5rem;
-        padding: 0.7rem;
-        padding-bottom: 2rem;
+        margin-top: 3rem;
+        /* padding: 0.7rem; */
+        /* padding-bottom: 2rem; */
+        position: absolute;
+    }
+    .hero .hero-right p{
+        background: linear-gradient(#16161600, #161616, #161616);
+    }
+    .hamberger-logo img{
+        width: 100px;
+        margin-left: -15px;
+        
+    }
+    .hamberger{
+        top: 40px;
+        right: 30px;
+    }
+    .hero .hero-right h1{
+        /* background: linear-gradient(to right , #161616, #16161607); */
+    }
+    .hero .hero-left img{
+        width: 180px;
+        margin-right: -160px;
+        opacity: 0.8;
     }
     .about-inner-wrapp{
         flex-direction: column;
@@ -670,7 +693,8 @@ header.site-main-wrapper{
         /* height: 273px; */
     }
     section.blog{
-        padding-bottom: 8rem;
+        padding-bottom: 7rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 98%, 0 100%);
     }
     section.blog p{
         margin-bottom: 5rem;
